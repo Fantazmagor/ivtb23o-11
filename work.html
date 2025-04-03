@@ -2,28 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Заголовок страницы</title>
+    <title>Страница со стилями</title>
 </head>
-<body>
-    <h1>Заголовок</h1>
-    <h2>Заголовок уровня 2</h2>
-    <p>Параграф</p>
-    <div>
-        Текст.
-        <div>Подпись: Ильин</div>
+<body style="font-family: Arial; margin: 0; background: #f5f5f5;">
+    <div style="display: flex; gap: 20px; padding: 20px;">
+        <div style="flex: 1; background: white; padding: 15px; border-radius: 5px;">
+            <h1 style="color: #2c3e50; font-size: 24px;">Заголовок</h1>
+            <h2 style="color: #3498db;">Заголовок уровня 2</h2>
+            <p style="line-height: 1.5;">Параграф текста с увеличенным межстрочным расстоянием.</p>
+        </div>
+        
+        <div style="flex: 1; background: white; padding: 15px; border-radius: 5px;">
+            <div>Текст.
+                <div style="font-weight: bold; text-align: right;">Подпись: Ильин</div>
+            </div>
+            
+            <ul style="list-style: square; padding-left: 20px;">
+                <li>Первый пункт</li>
+                <li>Второй пункт</li>
+            </ul>
+        </div>
     </div>
-    <ul>
-        <li>Первый пункт</li>
-        <li>Второй пункт </li>
-    </ul>
-    <ol>
-        <li>Первый шаг</li>
-        <li>Второй шаг</li>
-    </ol>
-    <blockquote>
-        "Вставьте цитату"
-    </blockquote>
-    <footer>
+    
+    <footer style="background: #2c3e50; color: white; text-align: center; padding: 10px;">
         <p>Конец всей информации</p>
     </footer>
 </body>
