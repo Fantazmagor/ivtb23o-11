@@ -2,27 +2,28 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Заголовок страницы</title>
+    <title>Адаптивная страница</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Заголовок</h1>
-    <h2>Заголовок уровня 2</h2>
-    <p>Параграф</p>
-    <div>
-        Текст.
-        <div>Подпись: Ильин</div>
+    <div class="container">
+        <div class="box">
+            <h1 id="main-title">Заголовок</h1>
+            <h2 class="sub-title">Заголовок уровня 2</h2>
+            <p class="text" data-type="main">Параграф текста.</p>
+        </div>
+        
+        <div class="box">
+            <div>Текст.
+                <div class="signature">Подпись: Ильин</div>
+            </div>
+            <ul class="custom-list">
+                <li>Первый пункт</li>
+                <li>Второй пункт</li>
+            </ul>
+        </div>
     </div>
-    <ul>
-        <li>Первый пункт</li>
-        <li>Второй пункт </li>
-    </ul>
-    <ol>
-        <li>Первый шаг</li>
-        <li>Второй шаг</li>
-    </ol>
-    <blockquote>
-        "Вставьте цитату"
-    </blockquote>
+    
     <footer>
         <p>Конец всей информации</p>
     </footer>
